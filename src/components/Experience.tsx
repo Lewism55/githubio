@@ -30,8 +30,8 @@ Initially this role was an apprenticeship. During this period, a few hours were 
         `,
     },
     {
-        jobTitle: 'HisAttire.com & W Rugby',
-        employer: 'Software Developer & Consultant',
+        jobTitle: 'Software Developer & Consultant',
+        employer: 'HisAttire.com & W Rugby',
         dates: 'December 2021 - May 2022, Remote',
         info: `For HisAttire I worked in a team of two to architect and develop a rental/sales/blog hybrid website. On the frontend we planned out and began work on a SPA using React, Redux and ReactRouter. I completed the base website with around 40% of the above functionalities, but due to other commitments I had to stand down before project completion. 
 
@@ -39,14 +39,14 @@ For W-Rugby, I provided technical assistance and advice to the two business part
         `,
     },
     {
-        jobTitle: 'Lantum',
-        employer: 'Launch Associate',
+        jobTitle: 'Launch Associate',
+        employer: 'Lantum',
         dates: 'October 2019 - March 2020, London',
         info: `Lantum is a health-tech scale-up which provides a SAAS platform. My time was spent: project managing launch processes, providing/presenting data analysis, upselling and generating referrals. I also offered technical support, such as: setting up accounts, training users, replicating and reporting bugs, and fixing administrative issues.`,
     },
     {
-        jobTitle: 'Key Locums, The GP Agency, Pulse',
-        employer: 'Recruitment Consultant & Team Lead',
+        jobTitle: 'Recruitment Consultant & Team Lead',
+        employer: 'Key Locums, The GP Agency, Pulse',
         dates: 'September 2015 - October 2019, London & Essex',
         info: `Prior to working in technology I was a recruitment consultant and team leader in the healthcare sector for 4 years. In my more senior roles, I managed teams of up to 3 staff and mentored various junior consultants. These experiences allowed me to develop excellent soft skills which have been useful throughout my career.`,
     },

@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const Skills: React.FC = () => {
     const languagesFrameworks = [
@@ -20,6 +21,10 @@ const Skills: React.FC = () => {
         'Confluence, Notion, Jira, Monday, Trello and Asana',
     ]
 
+    const cardVariants = {
+        hover: { scale: 1.1 },
+    }
+
     return (
         <>
             <h1>Skills</h1>
@@ -28,22 +33,22 @@ const Skills: React.FC = () => {
                 before:
             </div>
             <div className='skills-grid'>
-                <div className='card'>
+            <motion.div className='card' whileHover='hover' variants={cardVariants}>
                     <h2>Languages/Frameworks</h2>
                     <ul>
                         {languagesFrameworks.map((item) => (
                             <li key={item}>{item}</li>
                         ))}
                     </ul>
-                </div>
-                <div className='card'>
+                    </motion.div>
+                <motion.div className='card' whileHover='hover' variants={cardVariants}>
                     <h2>Tools/Technologies</h2>
                     <ul>
                         {toolsTechnologies.map((item) => (
                             <li key={item}>{item}</li>
                         ))}
                     </ul>
-                </div>
+                    </motion.div>
             </div>
         </>
     )

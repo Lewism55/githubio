@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import Linkedin from '../assets/Linkedin'
 import Phone from '../assets/Phone'
 import Email from '../assets/Email'
@@ -6,12 +7,16 @@ import Location from '../assets/Location'
 import Me from '../assets/MikePhoto.jpg'
 
 const Profile: React.FC = () => {
+    const cardVariants = {
+        hover: { scale: 1.1 },
+    }
+
     return (
         <>
             <div className='flexR profile-content'>
-                <div className='flexC'>
-                    <h1>Michael Lewis</h1>
-                    <h3>Software Developer</h3>
+                <div className='flexC profile-header'>
+                    <h1 className='my-name'>Michael Lewis</h1>
+                    <h1>Software Developer</h1>
                 </div>
                 <img src={Me} alt="Mike's Photo" className='me-photo' />
             </div>
@@ -22,7 +27,7 @@ const Profile: React.FC = () => {
                     site and find out more about me, my experience and some examples of my work. Please get in touch if you have any further questions!
                 </div>
 
-                <div className='card profile-card'>
+                <motion.div className='card profile-card' whileHover='hover' variants={cardVariants}>
                     <h3>Contact details:</h3>
                     <div className='flexR contact-detail'>
                         <Location />
@@ -48,7 +53,7 @@ const Profile: React.FC = () => {
                             LinkedIn
                         </a>
                     </div>{' '}
-                </div>
+                </motion.div>
             </div>
         </>
     )
