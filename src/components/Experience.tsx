@@ -56,10 +56,14 @@ const Experience: React.FC = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(null)
 
     return (
-        <div>
+        <>
+            <h1>Experience</h1>
+            <div className='page-description'>
+                Below is a summary of my employment history, including my current role as a software developer. Please click a role to see a full description.
+            </div>
             {experienceList.map((experience, index) => (
                 <div key={index} className='details'>
-                    <summary className='experience-summary' onClick={() => setOpenIndex(openIndex === index ? null : index)}>
+                    <summary className={`experience-summary${openIndex === index ? '-open' : ''}`} onClick={() => setOpenIndex(openIndex === index ? null : index)}>
                         <div className='flexC'>
                             <div className='experience-summary-block flexR'>
                                 <h3 className='experience-title'>{experience.jobTitle}</h3>
@@ -84,7 +88,7 @@ const Experience: React.FC = () => {
                     </AnimatePresence>
                 </div>
             ))}
-        </div>
+        </>
     )
 }
 
