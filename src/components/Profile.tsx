@@ -25,6 +25,8 @@ const Profile: React.FC = () => {
                 <div className='profile-description'>
                     Hi, I'm Michael. I am a frontend leaning software developer who enjoys crafting usable and intuitive technology. Feel free to browse this
                     site and find out more about me, my experience and some examples of my work. Please get in touch if you have any further questions!
+                    <br /> <br />
+                    (Site last updated: January 2024)
                 </div>
 
                 <motion.div className='card profile-card' whileHover='hover' variants={cardVariants}>

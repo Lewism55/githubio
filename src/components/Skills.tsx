@@ -33,14 +33,14 @@ const Skills: React.FC = () => {
                 before:
             </div>
             <div className='skills-grid'>
-            <motion.div className='card' whileHover='hover' variants={cardVariants}>
+                <motion.div className='card' whileHover='hover' variants={cardVariants}>
                     <h2>Languages/Frameworks</h2>
                     <ul>
                         {languagesFrameworks.map((item) => (
                             <li key={item}>{item}</li>
                         ))}
                     </ul>
-                    </motion.div>
+                </motion.div>
                 <motion.div className='card' whileHover='hover' variants={cardVariants}>
                     <h2>Tools/Technologies</h2>
                     <ul>
@@ -48,7 +48,7 @@ const Skills: React.FC = () => {
                             <li key={item}>{item}</li>
                         ))}
                     </ul>
-                    </motion.div>
+                </motion.div>
             </div>
         </>
     )
